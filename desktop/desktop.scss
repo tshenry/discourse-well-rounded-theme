@@ -392,12 +392,6 @@ div.latest-topic-list-item:nth-last-of-type(2) {
     border-bottom-left-radius: 5px;
 }
 
-//Four values - border-radius: 15px 50px 30px 5px;
-//(first value applies to top-left corner,
-// second value applies to top-right corner,
-// third value applies to bottom-right corner,
-// and fourth value applies to bottom-left corner):
-
 #reply-control,
 .grippie {
     border-radius: 5px 5px 0 0;
@@ -418,7 +412,6 @@ div.panel.clearfix {
 }
 
 .admin-customize .admin-controls {
-    //.nav.nav-pills.fields {
     border-radius: 5px 5px 0 0;
 }
 
@@ -817,7 +810,6 @@ header {
 
 // Media Queries ----------------------------------------------
 
-//@media only screen and (max-width: 1100px) {
 @media only screen and (max-width: 1148px) {
     div.title {
         width: unset;
