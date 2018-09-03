@@ -1,0 +1,884 @@
+@import "common/foundation/variables";
+
+// Colors
+
+.d-header,
+#reply-control .mini-tag-chooser {
+    background-color: unset;
+}
+
+.admin-contents,
+.user-main .staff-counters a,
+.user-main .staff-counters div,
+.user-preferences,
+.user-content,
+.user-table,
+.about .details,
+.page-not-found-topics,
+.post-stream,
+.topic-admin-popup-menu,
+.category-list tbody .category h3 a[href],
+.topic-count,
+.search-advanced-sidebar,
+.categories-admin-dropdown i,
+.select-kit.combo-box,
+.groups-form.form-vertical,
+.topic-list .badge-wrapper.bullet span.badge-category,
+.admin-contents .nav-pills > li > a:not(.active),
+.user-table .nav-pills > li > a {
+    color: $primary;
+}
+
+html,
+textarea,
+div.topic-body.clearfix,
+section.user-right.user-preferences,
+.menu-panel,
+.drop-down-mode .d-header-icons .active .icon,
+.user-menu .notifications .read,
+.d-editor-preview,
+.d-editor-textarea-wrapper,
+.user-main .staff-counters,
+.badge-card,
+.modal-inner-container,
+.latest-topic-list-item,
+.category-list tbody td,
+.topic-list td.category,
+.topic-list td.posts,
+.topic-list td.views,
+.topic-list td.activity,
+.topic-list td.posters,
+.topic-list td.main-link,
+.topic-list td.bulk-select,
+.paginated-topics-list .user-content,
+.top-section,
+.tag-list,
+div.ac-wrap,
+.fps-result,
+.page-not-found-topics,
+.groups-form.form-vertical,
+.select-kit.combo-box .select-kit-header,
+.user-stream .item.notification:not(.unread),
+.user-stream .user-stream-item,
+div.choices,
+.select-kit .select-kit-body,
+.select-kit .select-kit-collection,
+.select-kit.multi-select .choices .filter .filter-input,
+.select-kit.multi-select .choices .filter .filter-input:focus,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.emoji-picker .filter input,
+.topic-list .topic-list-item-separator td span {
+    background: $primary-low;
+}
+
+.panel.clearfix,
+.extra-info-wrapper,
+#main-outlet.wrap,
+#bulk-select,
+#reply-control,
+.emoji-picker,
+.modal .nav {
+    background: $primary;
+}
+
+.d-header-icons .icon,
+.user-stream .item:not(.notification),
+.user-stream .user-stream-item,
+#main-outlet.wrap,
+body[class*="category-"] .topic-statuses .topic-status i,
+.user-navigation .nav-stacked a.active,
+.extra-info-wrapper .topic-link,
+.extra-info-wrapper .badge-wrapper,
+.extra-info-wrapper .badge-wrapper.bullet span.badge-category,
+.nav-pills > li > a,
+.emoji-picker,
+.emoji-picker .section-header .title,
+#topic-title h1 a,
+#topic-title .badge-wrapper.none,
+.topic-category .badge-wrapper.bullet span.badge-category,
+.tag-groups-container .content-list ul li a:not(:hover),
+.error-page,
+.suggested-topics-message .badge-wrapper.bullet span.badge-category,
+.admin-controls .nav-pills > li a.active,
+.styleguide .styleguide-menu ul li a,
+body:not(.admin-interface)
+    .select-kit.dropdown-select-box.period-chooser
+    .period-chooser-header
+    .d-icon,
+body:not(.admin-interface)
+    .select-kit.dropdown-select-box.period-chooser
+    .period-chooser-header
+    h2.selected-name
+    .date-section {
+    color: $primary-low;
+}
+
+.user-right,
+.small-action .small-action-desc {
+    background: dark-light-diff($primary, $secondary, 5%, 10%);
+}
+
+hr,
+.user-content.user-badges-list,
+.user-invites-page .admin-controls .btn {
+    background: $primary-low-mid;
+}
+
+.user-invites-page .admin-controls .fa-question-circle {
+    color: $primary-low-mid;
+}
+
+.discourse-tag.simple,
+.discourse-tag.simple:visited,
+.discourse-tag.simple:hover,
+.extra-info-wrapper .discourse-tag {
+    color: $secondary-high !important;
+}
+
+.small-action {
+    .btn {
+        color: $primary-high;
+    }
+    .btn:hover {
+        color: $primary;
+    }
+}
+
+// From the category selector and admin category options
+.topic-count,
+.categories-admin-dropdown i {
+    color: $primary;
+}
+
+// For the headings
+.topic-list,
+.groups-table,
+table.group-members,
+.directory table {
+    th.sortable:hover {
+        color: #fff;
+        background: unset;
+    }
+}
+
+// This is needed since we did away with the .post-stream
+// background. Normally 100% is set to transparent.
+@keyframes background-fade-highlight {
+    0% {
+        background-color: $tertiary-low;
+    }
+    100% {
+        background-color: $primary-low;
+    }
+}
+
+// Font ----------------------------------------
+
+.topic-list .topic-list-item-separator td {
+    line-height: 0;
+}
+.extra-info.two-rows h1 {
+    font-size: $font-up-4;
+}
+.extra-info.two-rows h1 {
+    line-height: $line-height-medium;
+}
+.extra-info-wrapper .topic-link span {
+    font-size: 0.975em;
+}
+#topic-title .fancy-title {
+    font-size: 0.975em;
+}
+
+// Borders and Box Shadows ----------------------------------------
+
+// Borders
+
+.topic-status-info,
+.small-action,
+.time-gap {
+    border-top: none;
+}
+
+.categories-and-latest,
+.categories-and-top {
+    .table-heading {
+        border-bottom: none;
+    }
+}
+
+.select-kit.combo-box .select-kit-filter {
+    border-bottom: 1px solid $primary-low-mid;
+}
+
+.small-action .small-action-desc {
+    border: 1px solid;
+}
+#main-outlet.wrap {
+    border: 5px solid $primary;
+}
+
+.group-form-bio,
+.user-preferences .bio-composer,
+.user-preferences .bio-composer .d-editor-textarea-wrapper,
+.group-form-bio .d-editor-textarea-wrapper,
+.edit-category-tab-topic-template .d-editor-textarea-wrapper {
+    border: 1px solid $secondary-medium;
+}
+
+.category-list,
+.category-list.with-topics {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.latest-topic-list-item,
+.d-editor-button-bar {
+    border-bottom: 1px solid $primary-high;
+}
+
+.topic-list {
+    border-collapse: separate;
+    border-spacing: 0 1px;
+}
+
+.topic-list td.main-link,
+.topic-list td.posters,
+.topic-list td.category {
+    border-right: 5px solid $primary;
+}
+
+.topic-list .topic-list-item-separator td {
+    border-bottom: 2px solid $danger-low;
+}
+
+.topic-post {
+    border-left: 2px solid transparent;
+}
+
+// Border radius
+
+.btn,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+div.topic-body.clearfix,
+.topic-post,
+.moderator .regular > .cooked,
+.small-action .small-action-desc,
+#main-outlet.wrap,
+.menu-panel,
+#banner,
+.nav-pills > li > a,
+section.user-right.user-preferences,
+.select-kit.dropdown-select-box.composer-actions .d-icon,
+.d-editor-preview,
+.d-editor-textarea-wrapper,
+.popup-menu,
+div.boxed.white.admin-content,
+.admin-controls .nav.nav-pills,
+.admin-controls .controls,
+.admin-controls search.controls,
+.modal-inner-container,
+.topic-list .sortable:hover,
+.select-kit .select-kit-header,
+.list-controls .combo-box .combo-box-header,
+.top-section,
+.badge-card,
+.user-badge,
+#user-card,
+#group-card,
+.user-main .about,
+.time-gap,
+.user-content,
+.emoji-picker,
+.tag-list,
+.signup-cta,
+.fps-invalid,
+.fps-result,
+.page-not-found-topics,
+.group-details-container,
+.select-kit.multi-select,
+#user-card.show-badges .more-user-badges,
+#group-card.show-badges .more-user-badges,
+.d-header-icons .icon:hover,
+.d-header-icons .icon:focus,
+.user-right,
+.groups-form.form-vertical,
+.user-stream .item:not(.notification),
+.user-stream .user-stream-item,
+.user-preferences .bio-composer,
+.group-form-bio,
+div.ac-wrap {
+    border-radius: 5px;
+}
+
+.topic-list {
+    tr:first-of-type td:first-of-type {
+        border-top-left-radius: 5px;
+    }
+    tr:first-of-type td:last-of-type {
+        border-top-right-radius: 5px;
+    }
+    tr:last-of-type td:first-of-type {
+        border-bottom-left-radius: 5px;
+    }
+    tr:last-of-type td:last-of-type {
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.category-list tbody td {
+    &.category {
+        border-radius: 5px 0 0 5px;
+    }
+    &.latest {
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+.item.notification.large-notification:last-of-type,
+div.latest-topic-list-item:nth-last-of-type(2) {
+    border-radius: 0 0 5px 5px;
+}
+
+.table-heading + .latest-topic-list-item,
+.user-main .staff-counters,
+.item.notification.large-notification:first-of-type,
+.search-advanced-title,
+#user-card .card-content,
+#group-card .card-content {
+    border-radius: 5px 5px 0 0;
+}
+
+.category-list:not(.with-topics) .topics {
+    border-radius: 0 5px 5px 0;
+}
+
+#topic-progress-wrapper .toggle-admin-menu {
+    border-radius: 5px 0 0 0;
+}
+
+#topic-progress {
+    border-top-right-radius: 5px;
+}
+
+#topic-progress-wrapper.docked .toggle-admin-menu {
+    border-bottom-left-radius: 5px;
+}
+
+//Four values - border-radius: 15px 50px 30px 5px;
+//(first value applies to top-left corner,
+// second value applies to top-right corner,
+// third value applies to bottom-right corner,
+// and fourth value applies to bottom-left corner):
+
+#reply-control,
+.grippie {
+    border-radius: 5px 5px 0 0;
+}
+
+// Wrench button on right side
+#bulk-select {
+    border-radius: 0 5px 5px 0;
+}
+
+div.panel.clearfix {
+    border-radius: 0 0 5px 5px;
+}
+
+.d-header-icons .header-dropdown-toggle.active .icon,
+.d-header-icons .header-dropdown-toggle.active .icon:hover {
+    border-radius: 5px 5px 0 0;
+}
+
+.admin-customize .admin-controls {
+    //.nav.nav-pills.fields {
+    border-radius: 5px 5px 0 0;
+}
+
+.admin-controls {
+    .controls,
+    search.controls {
+        border-bottom-left-radius: 0px;
+    }
+}
+
+.nav-stacked {
+    border-bottom-left-radius: 5px;
+}
+
+.topic-list td {
+    border-radius: 0px;
+}
+
+// Box-shadow
+
+#main-outlet.wrap,
+.panel.clearfix {
+    box-shadow: 0 0 4px 0px rgba(147, 147, 147, 1);
+}
+
+.d-header {
+    box-shadow: none;
+}
+
+// Removes the default selection color
+.topic-post.selected {
+    box-shadow: none;
+}
+// Add the selection color to the topic-body instead
+.topic-post.selected .topic-body {
+    box-shadow: -8px 0 0 $danger;
+}
+// Removes selection for the linked replies
+.topic-post.selected .embedded-posts {
+    &.topic-body,
+    .topic-body {
+        box-shadow: none;
+    }
+}
+
+// Padding -------------------------------------------------
+
+div.panel.clearfix {
+    padding: 0.25em 0.7em 0.35em 0;
+}
+
+.user-main .about.no-background .details .primary {
+    padding: 1em 0.75em 0;
+}
+
+.categories-list th {
+    padding: 0 0.35em 0.35em;
+}
+
+.extra-info-wrapper {
+    padding: 0.1em 1.4em 0.75em 2.2em;
+    margin-left: -13px;
+}
+
+#topic-title {
+    padding-top: 0;
+}
+
+.small-action {
+    padding-left: 1em;
+}
+
+.time-gap,
+.small-action .small-action-desc {
+    padding: 1em 1em;
+}
+
+.d-editor-preview {
+    padding: 0.5em 0.75em;
+}
+
+div.boxed.white.admin-content {
+    padding: 0.75em;
+}
+
+.admin-controls .pull-right {
+    padding-left: 0.75em;
+}
+
+.user-preferences {
+    padding-left: 1.25em;
+}
+
+.top-section,
+.container + div[class*="category-"] {
+    padding: 1.25em;
+}
+
+.fps-result,
+.page-not-found-topics {
+    padding: 1em;
+}
+
+.static-tos,
+.static-privacy,
+.static-faq,
+.about-page {
+    .body-page {
+        padding-left: 1em;
+    }
+}
+
+body:not(.archetype-banner) {
+    #main-outlet {
+        padding-top: 2em;
+
+        & > div {
+            padding: 0 1.25em;
+        }
+    }
+}
+
+body[class*="category-"].archetype-banner {
+    #main-outlet {
+        padding-top: 5.8572em;
+
+        & > div {
+            padding: 0 1.25em;
+        }
+    }
+}
+
+body[class*="category-"].archetype-regular,
+body.archetype-private_message {
+    #main-outlet {
+        padding-top: 7.2em;
+    }
+}
+
+.categories-and-latest,
+.categories-and-top {
+    div.table-heading {
+        padding: 0.35em 0.35em 0.75em 0.35em;
+    }
+}
+
+.topic-list td {
+    padding: 0.4em;
+}
+
+.topic-list th {
+    padding: 0 0.5em 0.5em;
+}
+
+.topic-list td.bulk-select {
+    padding: 0;
+    padding-left: 0.7em;
+}
+
+.bulk-select-all,
+.bulk-clear-all {
+    padding: 0.08em 0.6em;
+}
+
+.topic-list td.category,
+.topic-list td.bulk-select + .main-link {
+    padding-left: 0.7em;
+}
+
+.user-stream .item:not(.notification),
+.user-stream .user-stream-item {
+    padding: 20px 8px 15px 15px;
+}
+
+.topic-body {
+    padding-left: 4.4em;
+}
+
+.emoji-picker .categories-column {
+    padding: 0.75em 0;
+}
+
+.emoji-picker .filter {
+    padding: 0.75em 0.5em 0.5em 0;
+}
+
+.user-right,
+.groups-form.form-vertical {
+    padding: 1.5em;
+}
+
+.category-list .topics {
+    padding-right: 1em;
+}
+
+// Display and position --------------------------------------------
+
+.admin-controls {
+    nav:before,
+    nav:after {
+        display: none;
+    }
+}
+
+div.panel.clearfix {
+    display: inline-block;
+}
+
+.anon .d-header .header-buttons {
+    position: fixed;
+}
+
+// When scrolled down and only login button is showm
+.login-button {
+    position: relative;
+}
+// When both buttons are shown
+.sign-up-button + .login-button {
+    position: static;
+}
+
+.d-header,
+header.d-header.clearfix {
+    position: static;
+}
+.docked {
+    position: relative;
+}
+
+.extra-info-wrapper,
+div.panel.clearfix {
+    position: fixed;
+}
+
+.time-gap {
+    top: 20px;
+}
+.menu-panel.drop-down {
+    top: 44px !important;
+}
+.anon div.panel.clearfix {
+    right: 90px;
+}
+// When scrolled down and just login button is showm
+.login-button {
+    left: 62px;
+}
+
+.d-header-icons {
+    float: right;
+}
+.timeline-controls .topic-admin-popup-menu {
+    left: unset !important;
+}
+.timeline-controls .topic-admin-popup-menu {
+    right: -7px;
+}
+
+// Width and Height -------------------------------------
+
+div#main-outlet.wrap {
+    min-height: 83.7vh;
+}
+div.boxed.white.admin-content {
+    min-height: 76vh;
+}
+
+.user-main .about.no-background .details .primary {
+    width: 98%;
+}
+
+.topic-body {
+    width: calc(100% - 87px);
+    max-width: 790px;
+}
+
+.anon div.panel.clearfix {
+    width: 240px;
+}
+
+.gap {
+    width: calc(45px + 390px + 2 * 11px);
+}
+
+.extra-info-wrapper {
+    width: 100%;
+}
+
+.extra-info-wrapper {
+    max-width: 1085px;
+}
+
+// Z-index ---------------------------------------------
+
+.extra-info-wrapper,
+.anon .d-header .header-buttons {
+    z-index: z(header);
+}
+
+div.panel.clearfix {
+    z-index: z(header) + 1;
+}
+
+// Margins ---------------------------------------------------------------
+
+.popular-topics h2,
+.recent-topics h2 {
+    margin: 10px 0;
+}
+
+.timeline-container {
+    margin-left: 837px;
+}
+
+#topic-title {
+    margin-bottom: 12px;
+    margin-top: 2px;
+}
+.extra-info-wrapper .topic-link {
+    margin-top: -3px;
+}
+.extra-info.two-rows h1 {
+    margin-bottom: 4px;
+}
+.extra-info.two-rows h1 {
+    margin-top: 2px;
+}
+.extra-info-wrapper .topic-header-extra {
+    margin: 0;
+}
+.extra-info-wrapper,
+div.panel.clearfix {
+    margin-top: -11px;
+}
+
+.topic-post {
+    margin-top: 10px;
+}
+.topic-post + .small-action {
+    margin: 10px 0;
+}
+
+.anon .d-header .header-buttons {
+    margin-left: 15px;
+}
+.anon .d-header .header-buttons {
+    margin-top: 6px;
+}
+
+.d-header button.login-button {
+    margin-left: 5px;
+}
+
+.btn-rollback {
+    margin-bottom: 5px;
+}
+
+.admin-customize .nav.nav-pills.fields,
+.dashboard-next .section-columns .section-column:last-child {
+    margin-left: 0;
+}
+
+.user-stream .item:not(.notification),
+.user-stream .user-stream-item {
+    margin-bottom: 10px;
+}
+
+.topic-body {
+    margin-left: -50px;
+}
+
+.fps-result,
+.user-stream .item.notification {
+    margin-bottom: 2px;
+}
+
+.topic-list .topic-list-item-separator td span {
+    margin-right: 40px;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+.user-main .about.no-background .staff-counters {
+    margin-bottom: 0;
+}
+
+.container + div[class*="category-"] {
+    margin-top: -5.2em;
+}
+
+.post-stream .topic-post:first-child {
+    margin: 0;
+}
+
+// Media Queries ----------------------------------------------
+
+//@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1148px) {
+    div.title {
+        width: unset;
+    }
+
+    div.panel.clearfix {
+        right: 35px;
+    }
+
+    .anon div.panel.clearfix {
+        right: 28px;
+    }
+}
+
+@media only screen and (min-width: 1148px) {
+    // Needs to be set in order to keep the panel where we want it.
+    .d-header .contents.clearfix .title {
+        width: 960px;
+    }
+
+    .anon .d-header .contents.clearfix .title {
+        width: 1006px;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+    .timeline-container {
+        margin-left: 900px;
+    }
+}
+
+@media only screen and (max-width: 1112px) {
+    .timeline-controls .topic-admin-popup-menu {
+        left: unset !important;
+        right: 50px !important;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .topic-body {
+        box-sizing: unset;
+    }
+}
+
+// Misc ---------------------------------------------------------------
+
+.extra-info-wrapper .badge-wrapper,
+.extra-info-wrapper .topic-header-extra .discourse-tag,
+.extra-info-wrapper i,
+.extra-info-wrapper .topic-link {
+    -webkit-animation: none;
+    animation: fadein none;
+}
+
+// Style login button for page-not-found page
+body:not([class]) {
+    .panel.clearfix {
+        right: 90px;
+        padding: 0.75em 1.4em 0.75em 0.6em;
+    }
+    .login-button {
+        left: 5px;
+    }
+}
