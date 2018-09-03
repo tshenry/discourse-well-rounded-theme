@@ -1,4 +1,4 @@
-# Well Rounded
+# Well-Rounded
 
 This is a submission to the [Discourse CSS Theme Contest](https://meta.discourse.org/t/css-theme-contest-with-prizes/93770). While it can certainly be used in it's current state, there are many improvements I hope to bring to the theme with more time. These main priorities include:
 
